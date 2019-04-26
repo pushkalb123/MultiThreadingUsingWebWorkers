@@ -1,0 +1,90 @@
+.thread {
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+}
+.thread center {
+	color: white;
+	font-size: 32px;
+	padding-top: 24px;
+}
+.card-container {
+	width: 150px;
+	height: 180px;
+	position: relative;
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-o-perspective: 800px;
+	perspective: 800px;
+	margin-left: 33%;
+}
+.card {
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	position: absolute;
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -moz-transform 1s;
+	-o-transition: -o-transform 1s;
+	transition: transform 1s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform-origin: 50% 50%;
+}
+.card div {
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 180px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 121px;
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.card .front {
+	background: red;
+}
+.card .back {
+	background: blue;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.card.flipped {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.calculate {
+	text-align: center;
+	margin: 50px;
+	font-size: 25px;
+	color: #f4faff;
+}
+.btn-info {
+	border-radius: 4px;
+	border-radius: 4px;
+	width: 200px;
+	height: 45px;
+	margin: 11px 0 0 0;
+	font-size: 20px;
+}
+.multipleThreads {
+	height: 46%;
+	margin: 4px;
+}
+.multipleThreads center {
+	font-size: 17px;
+}
+.multipleThreads .calculate {
+	font-size: 15px;
+}
