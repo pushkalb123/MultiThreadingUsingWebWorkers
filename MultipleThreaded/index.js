@@ -1,5 +1,5 @@
 const workerUrl =
-	location.origin + "/ServiceWorkerMultiThreading/MultipleThread/sw.js";
+	location.origin + "/MultiThreadingUsingWebWorkers/MultipleThreaded/sw.js";
 
 function animateFlip() {
 	setInterval(() => {
